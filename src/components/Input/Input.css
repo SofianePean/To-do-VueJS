@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+.input {
+    padding: 10px;
+}
+.label {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.btnForm {
+    width: 20%;
+    padding: 3px 6px;
+    background-color: #395C6B;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}

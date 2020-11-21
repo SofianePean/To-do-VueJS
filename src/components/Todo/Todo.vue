@@ -2,7 +2,7 @@
     <div class="todo">
         <h1 class="title">To-Do List</h1>
         <Input @clicked="onClickChild"/>
-        <Tasks v-bind:tasks="tasks"/>
+        <Tasks v-bind:tasks="tasks" @clickedDelete="handleDelete"/>
     </div>
 </template>
 
@@ -25,7 +25,11 @@ export default {
     methods : {
            onClickChild (value) {
           this.tasks.push(value)
-      }
+      },
+        handleDelete(value) {
+            console.log(`tasks depuis todo ${value}`)
+            this.tasks = this.tasks.filter(e => e !== value);
+        }
     }
 
 }

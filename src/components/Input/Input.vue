@@ -14,12 +14,13 @@ export default {
     name: "Input",
     data() {
         return {
-            taskInput: 'Coucou'
+            taskInput: ''
         }
     },
     methods: {
         handleSubmit() {
             console.log('Form envoyé')
+            this.$emit('clicked', this.taskInput)
         }
     }
 }

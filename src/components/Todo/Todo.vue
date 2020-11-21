@@ -1,8 +1,8 @@
 <template>
     <div class="todo">
         <h1 class="title">To-Do List</h1>
-        <Input />
-        <Tasks tasks="tasks"/>
+        <Input @clicked="onClickChild"/>
+        <Tasks v-bind:tasks="tasks"/>
     </div>
 </template>
 
@@ -21,6 +21,11 @@ export default {
     components: {
         Input,
         Tasks
+    },
+    methods : {
+           onClickChild (value) {
+          this.tasks.push(value)
+      }
     }
 
 }

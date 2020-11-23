@@ -6,6 +6,9 @@
 }
 .input {
     padding: 10px;
+    background-color: #e0e2db;
+    list-style: none;
+    border: none;
 }
 .label {
     font-size: 1.5rem;
@@ -13,7 +16,7 @@
 }
 .btnForm {
     width: 20%;
-    padding: 3px 6px;
+    padding: 6px 9px;
     background-color: #395C6B;
     color: white;
     border-style: none;

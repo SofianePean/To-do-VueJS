@@ -27,7 +27,6 @@ export default {
           this.tasks.push(value)
       },
         handleDelete(value) {
-            console.log(`tasks depuis todo ${value}`)
             this.tasks = this.tasks.filter(e => e !== value);
         }
     }

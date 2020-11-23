@@ -17,7 +17,6 @@ export default {
     props: ['tasks'],
     methods: {
         handleDelete(task) {
-            console.log(`Je click sur la task ${task}`)
             this.$emit('clickedDelete', task)
         }
     }

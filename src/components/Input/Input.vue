@@ -21,6 +21,7 @@ export default {
         handleSubmit() {
             console.log('Form envoyé')
             this.$emit('clicked', this.taskInput)
+            this.taskInput = ''
         }
     }
 }

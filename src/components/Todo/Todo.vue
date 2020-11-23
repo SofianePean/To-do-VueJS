@@ -1,8 +1,11 @@
 <template>
+    <div class="container">
+
     <div class="todo">
         <h1 class="title">To-Do List</h1>
-        <Input @clicked="onClickChild"/>
+        <Input @clicked="onClickChild" v-bind:clearInput="clearInput"/>
         <Tasks v-bind:tasks="tasks" @clickedDelete="handleDelete"/>
+    </div>
     </div>
 </template>
 

@@ -12,17 +12,30 @@
 .tasks {
     padding: 15px;
     list-style-type: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 10px;
     position: relative;
+    background-color: white;
 }
-.btnTask {
+font-awesome-icon {
+    color: black;
+    width: 50px;
+    height: 50px;
+}
+.btnDeleteTask {
     position: absolute;
-    top: 5px;
+    top: 25%;
     right: 5px;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
     font-weight: bold;
-    border-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btnEditTask {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
 }

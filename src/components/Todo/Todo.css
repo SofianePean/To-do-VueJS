@@ -1,9 +1,18 @@
 .todo {
-    padding: 2em 4em;
+	padding: 2em 4em;
+	/* min-height: 100vh; */
+
+	/* min-height: 100vh; */
 }
 .title {
     text-align: center;
     font-size: 2rem;
+}
+.container {
+	min-height: calc(100vh - 2.5rem);
+	background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+	background: linear-gradient(to right, #ffa751, #ffe259);
 }
 
 html, body, div, span, applet, object, iframe,

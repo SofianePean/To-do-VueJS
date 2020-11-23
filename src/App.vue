@@ -1,26 +1,24 @@
 <template>
   <div id="app">
-    <Todo />
+    <NavLink />
+     <router-view></router-view>
+     
   </div>
 </template>
 
 <script>
-import Todo from './components/Todo/Todo'
+// import Todo from './components/Todo/Todo'
+import NavLink from './components/NavLink/NavLink'
 
 export default {
   name: 'App',
   components: {
-    Todo
+    // Todo,
+    NavLink
   }
 }
 </script>
 
 <style scoped>
-  #app {
 
-    min-height: 100vh;
-    background: #ffe259;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
 </style>
